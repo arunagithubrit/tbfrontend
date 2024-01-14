@@ -6,11 +6,12 @@ import { AppComponent } from './app.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import {HttpClientModule} from '@angular/common/http'
-import {ReactiveFormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProductlistComponent } from './productlist/productlist.component';
-import { ProductdetailComponent } from './productdetail/productdetail.component'
+import { ProductdetailComponent } from './productdetail/productdetail.component';
+import { CartlistComponent } from './cartlist/cartlist.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,13 +20,15 @@ import { ProductdetailComponent } from './productdetail/productdetail.component'
     NavComponent,
     FooterComponent,
     ProductlistComponent,
-    ProductdetailComponent
+    ProductdetailComponent,
+    CartlistComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
+    FormsModule,
     
   ],
   providers: [],
